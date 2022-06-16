@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:nhlproj/models/models_json.dart';
 
 class CardTeamScreen extends StatelessWidget {
