@@ -1,0 +1,164 @@
+{
+  "copyright" : "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2022. All Rights Reserved.",
+  "teams" : [ {
+    "id" : 4,
+    "name" : "Philadelphia Flyers",
+    "link" : "/api/v1/teams/4",
+    "venue" : {
+      "id" : 5096,
+      "name" : "Wells Fargo Center",
+      "link" : "/api/v1/venues/5096",
+      "city" : "Philadelphia",
+      "timeZone" : {
+        "id" : "America/New_York",
+        "offset" : -4,
+        "tz" : "EDT"
+      }
+    },
+    "abbreviation" : "PHI",
+    "teamName" : "Flyers",
+    "locationName" : "Philadelphia",
+    "firstYearOfPlay" : "1967",
+    "division" : {
+      "id" : 18,
+      "name" : "Metropolitan",
+      "nameShort" : "Metro",
+      "link" : "/api/v1/divisions/18",
+      "abbreviation" : "M"
+    },
+    "conference" : {
+      "id" : 6,
+      "name" : "Eastern",
+      "link" : "/api/v1/conferences/6"
+    },
+    "franchise" : {
+      "franchiseId" : 16,
+      "teamName" : "Flyers",
+      "link" : "/api/v1/franchises/16"
+    },
+    "shortName" : "Philadelphia",
+    "officialSiteUrl" : "http://www.philadelphiaflyers.com/",
+    "franchiseId" : 16,
+    "active" : true
+  }, {
+    "id" : 5,
+    "name" : "Pittsburgh Penguins",
+    "link" : "/api/v1/teams/5",
+    "venue" : {
+      "id" : 5034,
+      "name" : "PPG Paints Arena",
+      "link" : "/api/v1/venues/5034",
+      "city" : "Pittsburgh",
+      "timeZone" : {
+        "id" : "America/New_York",
+        "offset" : -4,
+        "tz" : "EDT"
+      }
+    },
+    "abbreviation" : "PIT",
+    "teamName" : "Penguins",
+    "locationName" : "Pittsburgh",
+    "firstYearOfPlay" : "1967",
+    "division" : {
+      "id" : 18,
+      "name" : "Metropolitan",
+      "nameShort" : "Metro",
+      "link" : "/api/v1/divisions/18",
+      "abbreviation" : "M"
+    },
+    "conference" : {
+      "id" : 6,
+      "name" : "Eastern",
+      "link" : "/api/v1/conferences/6"
+    },
+    "franchise" : {
+      "franchiseId" : 17,
+      "teamName" : "Penguins",
+      "link" : "/api/v1/franchises/17"
+    },
+    "shortName" : "Pittsburgh",
+    "officialSiteUrl" : "http://pittsburghpenguins.com/",
+    "franchiseId" : 17,
+    "active" : true
+  }, {
+    "id" : 7,
+    "name" : "Buffalo Sabres",
+    "link" : "/api/v1/teams/7",
+    "venue" : {
+      "id" : 5039,
+      "name" : "KeyBank Center",
+      "link" : "/api/v1/venues/5039",
+      "city" : "Buffalo",
+      "timeZone" : {
+        "id" : "America/New_York",
+        "offset" : -4,
+        "tz" : "EDT"
+      }
+    },
+    "abbreviation" : "BUF",
+    "teamName" : "Sabres",
+    "locationName" : "Buffalo",
+    "firstYearOfPlay" : "1970",
+    "division" : {
+      "id" : 17,
+      "name" : "Atlantic",
+      "nameShort" : "ATL",
+      "link" : "/api/v1/divisions/17",
+      "abbreviation" : "A"
+    },
+    "conference" : {
+      "id" : 6,
+      "name" : "Eastern",
+      "link" : "/api/v1/conferences/6"
+    },
+    "franchise" : {
+      "franchiseId" : 19,
+      "teamName" : "Sabres",
+      "link" : "/api/v1/franchises/19"
+    },
+    "shortName" : "Buffalo",
+    "officialSiteUrl" : "http://www.sabres.com/",
+    "franchiseId" : 19,
+    "active" : true
+  }, {
+    "id" : 29,
+    "name" : "Columbus Blue Jackets",
+    "link" : "/api/v1/teams/29",
+    "venue" : {
+      "id" : 5059,
+      "name" : "Nationwide Arena",
+      "link" : "/api/v1/venues/5059",
+      "city" : "Columbus",
+      "timeZone" : {
+        "id" : "America/New_York",
+        "offset" : -4,
+        "tz" : "EDT"
+      }
+    },
+    "abbreviation" : "CBJ",
+    "teamName" : "Blue Jackets",
+    "locationName" : "Columbus",
+    "firstYearOfPlay" : "1997",
+    "division" : {
+      "id" : 18,
+      "name" : "Metropolitan",
+      "nameShort" : "Metro",
+      "link" : "/api/v1/divisions/18",
+      "abbreviation" : "M"
+    },
+    "conference" : {
+      "id" : 6,
+      "name" : "Eastern",
+      "link" : "/api/v1/conferences/6"
+    },
+    "franchise" : {
+      "franchiseId" : 36,
+      "teamName" : "Blue Jackets",
+      "link" : "/api/v1/franchises/36"
+    },
+    "shortName" : "Columbus",
+    "officialSiteUrl" : "http://www.bluejackets.com/",
+    "franchiseId" : 36,
+    "active" : true
+  } ]
+}
