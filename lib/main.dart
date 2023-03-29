@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_final_fields
 import 'package:flutter/material.dart';
 import 'package:nhlproj/screens/main_screen.dart';
 import 'package:provider/provider.dart';
