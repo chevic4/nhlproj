@@ -1,8 +1,9 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:nhlproj/screens/favorites_screen.dart';
 import 'package:nhlproj/screens/teams_screen.dart';
 import '../enums.dart';
-import 'package:nhlproj/screens/loading_result_Screen.dart';
+import 'package:nhlproj/screens/loading_result_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final ParamsToScreens parametries;
@@ -27,3 +28,4 @@ class HomeScreen extends StatelessWidget {
     }
   }
 }
+*/

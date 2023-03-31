@@ -30,7 +30,7 @@ class CardTeamScreen extends StatelessWidget {
                   children: [
                     Text(
                       team.name,
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     const SizedBox(
                       width: 1,
@@ -40,11 +40,11 @@ class CardTeamScreen extends StatelessWidget {
                       children: [
                         Text(
                           "location - ",
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         Text(
                           team.locationName,
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
                     ),
@@ -55,11 +55,11 @@ class CardTeamScreen extends StatelessWidget {
                         children: [
                           Text(
                             'first year of play in great league - ',
-                            style: Theme.of(context).textTheme.headline2,
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                           Text(
                             team.firstYearOfPlay,
-                            style: Theme.of(context).textTheme.headline1,
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                         ],
                       ),
@@ -75,11 +75,11 @@ class CardTeamScreen extends StatelessWidget {
                       children: [
                         Text(
                           "conference: ",
-                          style: Theme.of(context).textTheme.headline4,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         Text(
                           team.conference.name,
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
                     ),
@@ -91,11 +91,11 @@ class CardTeamScreen extends StatelessWidget {
                       children: [
                         Text(
                           "division: ",
-                          style: Theme.of(context).textTheme.headline4,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         Text(
                           team.division.name,
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
                     ),
@@ -103,11 +103,11 @@ class CardTeamScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Franchise: ",
-                          style: Theme.of(context).textTheme.headline3,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         Text(
                           team.franchise.teamName,
-                          style: Theme.of(context).textTheme.headline2,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
                     ),
@@ -134,7 +134,7 @@ class CardTeamScreen extends StatelessWidget {
               },
               child: Text(
                 'back',
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
           ],
