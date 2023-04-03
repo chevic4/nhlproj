@@ -1,0 +1,136 @@
+{
+    "copyright": "string",
+    "teams": [
+      {
+        "id": 28,
+        "name": "San Jose Sharks",
+        "link": "/api/v1/teams/28",
+        "venue": {
+          "name": "SAP Center at San Jose",
+          "link": "/api/v1/venues/null",
+          "city": "San Jose",
+          "timeZone": {
+            "id": "America/Los_Angeles",
+            "offset": -8,
+            "tz": "PST"
+          }
+        },
+        "abbreviation": "SJS",
+        "triCode": "SJS",
+        "teamName": "Sharks",
+        "locationName": "San Jose",
+        "firstYearOfPlay": 1990,
+        "division": {
+          "id": 15,
+          "name": "Pacific",
+          "link": "/api/v1/divisions/15"
+        },
+        "conference": {
+          "id": 5,
+          "name": "Western",
+          "link": "/api/v1/conferences/5"
+        },
+        "franchise": {
+          "id": 29,
+          "name": "Sharks",
+          "link": "/api/v1/franchises/29"
+        },
+        "roster": {
+          "roster": [
+            {
+              "person": {
+                "id": 8466138,
+                "fullName": "Joe Thornton",
+                "link": "/api/v1/people/8466138"
+              },
+              "jerseyNumber": 19,
+              "position": {
+                "code": "C",
+                "name": "Center",
+                "type": "Forward",
+                "abbreviation": "C"
+              }
+            }
+          ]
+        },
+        "nextGameSchedule": {
+          "totalItems": 1,
+          "totalEvents": 0,
+          "totalGames": 1,
+          "totalMatches": 0,
+          "dates": [
+            {
+              "date": "2018-02-10",
+              "totalItems": 1,
+              "totalEvents": 0,
+              "totalGames": 1,
+              "totalMatches": 0,
+              "games": [
+                {
+                  "gamePk": 2017020851,
+                  "link": "/api/v1/game/2017020851/feed/live",
+                  "gameType": "R",
+                  "season": "20172018",
+                  "gameDate": "2018-02-11T03:00:00Z",
+                  "status": {
+                    "abstractGameState": "Live",
+                    "codedGameState": "3",
+                    "detailedState": "In Progress",
+                    "statusCode": "2",
+                    "startTimeTBD": true
+                  },
+                  "teams": {
+                    "away": {
+                      "leagueRecord": {
+                        "wins": 23,
+                        "losses": 26,
+                        "ot": 4,
+                        "type": "league"
+                      },
+                      "score": 0,
+                      "team": {
+                        "id": 22,
+                        "name": "Edmonton Oilers",
+                        "link": "/api/v1/teams/22"
+                      }
+                    },
+                    "home": {
+                      "leagueRecord": {
+                        "wins": 28,
+                        "losses": 18,
+                        "ot": 8,
+                        "type": "league"
+                      },
+                      "score": 2,
+                      "team": {
+                        "id": 28,
+                        "name": "San Jose Sharks",
+                        "link": "/api/v1/teams/28"
+                      }
+                    }
+                  },
+                  "venue": {
+                    "name": "SAP Center at San Jose",
+                    "link": "/api/v1/venues/null"
+                  },
+                  "content": {
+                    "link": "/api/v1/game/2017020851/content"
+                  }
+                }
+              ],
+              "events": [
+                {}
+              ],
+              "matches": [
+                {}
+              ]
+            }
+          ]
+        },
+        "shortName": "San Jose",
+        "officialSiteUrl": "http://www.sjsharks.com",
+        "franchiseId": 29,
+        "active": true
+      }
+    ]
+  }

@@ -1,6 +1,5 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:nhlproj/src/config/navigation/names_routes.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
