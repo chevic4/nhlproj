@@ -1,5 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:nhlproj/src/domain/models/team_entityes/team_entity.dart';
+import 'package:nhlproj/src/presentation/screens/detail_screen.dart';
 import 'package:nhlproj/src/presentation/screens/favorite_teams_screen_nested.dart';
 import 'package:nhlproj/src/presentation/screens/teams_screen_nested.dart';
 import '../../presentation/screens/home_screen.dart';
@@ -12,11 +14,21 @@ class AppRoutes {
     return {
       NameRoute.mainScreen.path: (context, state, data) => const MainScreen(),
       NameRoute.homeScreen.path: (context, state, data) => const HomeScreen(),
+      NameRoute.detailTeamScreen.path: (context, state, data) {
+        final team = data as TeamEntity;
+        return DetailScreen(teamData: team);
+      },
       NameRoute.teamsScreen.path: (context, state, data) {
-        return const TeamsScreen();
+        final teamsList = data as List<TeamEntity>;
+        return TeamsScreen(
+          teams: teamsList,
+        );
       },
       NameRoute.favoriteScreen.path: (context, state, data) {
-        return const FavoriteTeamsScreen();
+        final favoriteTeamsList = data as List<TeamEntity>;
+        return FavoriteTeamsScreen(
+          favoriteTeams: favoriteTeamsList,
+        );
       }
     };
   }

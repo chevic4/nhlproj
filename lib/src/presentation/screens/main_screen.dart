@@ -1,5 +1,6 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:nhlproj/src/presentation/widgets/custom_button.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -21,8 +22,8 @@ class _MainScreenState extends State<MainScreen> {
       body: Column(
         children: [
           const Text('hockeyApp loading info & errors'),
-          FilledButton(
-            onPressed: () => context.beamToNamed('/home'),
+          CustomButton(
+            ontap: () => context.beamToNamed('/home'),
             child: const Text('go to app'),
           ),
         ],
