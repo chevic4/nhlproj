@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../enums.dart';
+import 'package:nhlproj/enums.dart';
 
 class LoadingResultScreen extends StatelessWidget {
   final ParamsToScreens parametries;
@@ -43,11 +43,3 @@ class LoadingResultScreen extends StatelessWidget {
     }
   }
 }
-
-
-// The supplied phased action failed with an exception.
-// Could not create task ':generateLockfiles'.
-// A problem occurred starting process 'command '/Users/chevic/StudioProjects/nhl_epic_demo/nhlproj/android/gradlew''
-// Could not start '/Users/chevic/StudioProjects/nhl_epic_demo/nhlproj/android/gradlew'
-// Cannot run program "/Users/chevic/StudioProjects/nhl_epic_demo/nhlproj/android/gradlew" (in directory "/Users/chevic/StudioProjects/nhl_epic_demo/nhlproj/android"): error=2, No such file or directory
-// error=2, No such file or directory

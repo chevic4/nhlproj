@@ -7,7 +7,8 @@ void main() {
   final appRouteDelegate = AppRoutesDelegate.routesDelegate();
   runApp(
     ProviderScope(
-      child: Application(routerDelegate: appRouteDelegate),
-    ),
+        child: Application(
+      routerDelegate: appRouteDelegate,
+    )),
   );
 }
