@@ -6,7 +6,5 @@ class ThemeCustomState extends StateNotifier<ThemeData> {
   ThemeCustomState() : super(ThemeDataChange.light);
   ThemeData get getTheme => state;
   void setThemeLight() => state = ThemeDataChange.light;
-  void setThemeDark() {
-    state = ThemeDataChange.dark;
-  }
+  void setThemeDark() => state = ThemeDataChange.dark;
 }

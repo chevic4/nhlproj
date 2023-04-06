@@ -1,7 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nhlproj/src/domain/uscases/theme_usecase.dart';
+import 'package:nhlproj/src/di_container.dart';
 import 'package:nhlproj/src/presentation/widgets/custom_button.dart';
 
 class MainScreen extends ConsumerWidget {
@@ -14,18 +14,23 @@ class MainScreen extends ConsumerWidget {
         actions: [
           Consumer(
             builder: (context, watch, child) {
-              var stateTheme = watch.watch(themeCustomStateProvider.notifier);
+              final controlle = ref.watch(themeCustomControllerProvider);
+              //   var stateTheme = watch.watch(themeCustomStateProvider.notifier);
               return Row(
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      stateTheme.setThemeDark();
+                      controlle.setDarkTheme();
+
+                      ///     stateTheme.setThemeDark();
                     },
                     child: const Text('d'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      stateTheme.setThemeLight();
+                      controlle.setLightTheme();
+
+                      ///    stateTheme.setThemeLight();
                     },
                     child: const Text('l'),
                   ),

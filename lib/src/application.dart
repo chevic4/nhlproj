@@ -1,7 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nhlproj/src/domain/uscases/theme_usecase.dart';
+import 'package:nhlproj/src/di_container.dart';
 
 class Application extends ConsumerWidget {
   final BeamerDelegate routerDelegate;
