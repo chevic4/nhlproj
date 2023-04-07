@@ -44,7 +44,7 @@ class TeamsFavoriteScreen extends StatelessWidget {
               },
               child: Text(
                 favoritecommands[i].name,
-                style: Theme.of(context).textTheme.headline3,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
           ),
@@ -54,7 +54,7 @@ class TeamsFavoriteScreen extends StatelessWidget {
       return Center(
         child: Text(
           'favorite is empty',
-          style: Theme.of(context).textTheme.headline1,
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
       );
     }

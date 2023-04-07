@@ -56,7 +56,7 @@ class _TeamsViewScreenState extends State<TeamsViewScreen> {
                     },
                     child: Text(
                       widget.paramsToScreens.allteams[i].name,
-                      style: Theme.of(context).textTheme.headline4,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ),
                   TextButton(

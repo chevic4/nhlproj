@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../enums.dart';
+import 'package:nhlproj/enums.dart';
 
 class LoadingResultScreen extends StatelessWidget {
   final ParamsToScreens parametries;
@@ -15,7 +15,7 @@ class LoadingResultScreen extends StatelessWidget {
         return Center(
           child: Text(
             'good, coomands is loading',
-            style: Theme.of(context).textTheme.headline3,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         );
       case ContentState.loading:
@@ -26,7 +26,7 @@ class LoadingResultScreen extends StatelessWidget {
         return Center(
           child: Text(
             'api is empty(',
-            style: Theme.of(context).textTheme.headline3,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         );
       case ContentState.failure:
