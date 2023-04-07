@@ -1,7 +1,3 @@
-enum ThemeCustomsParams {
-  light('lightTheme'),
-  dark('darkTheme');
-
-  const ThemeCustomsParams(this.name);
-  final String name;
-}
+const storePreferencesNmae = 'storePreferTheme';
+const storeLightTheme = 'lightTheme';
+const storeDarkTheme = 'DarkTheme';

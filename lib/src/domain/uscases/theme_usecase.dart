@@ -1,40 +1,22 @@
-import 'package:flutter/material.dart';
+import 'package:nhlproj/src/domain/repository/theme_repository_interface.dart';
 import 'package:nhlproj/src/presentation/screen_states/theme_state.dart';
+import 'package:nhlproj/src/utils/const/themes_const.dart';
 
-
-
-abstract class ThemeStoreRepository {
-  ThemeCustomState state;
-  ThemeStoreRepository({
-    required this.state,
-  }) {
-    _initStore();
-  }
-  Future<void> _initStore();
-  Future<ThemeData> getTheme() async {
-    return ThemeData();
-  }
-
-  Future<void> saveTheme(String nameThemeData) async {}
-}
-
-
-
-class ThemeCustomController {
+class ThemeCustomUsesCases {
   ThemeCustomState themeState;
   ThemeStoreRepository themeStore;
-  ThemeCustomController({
+  ThemeCustomUsesCases({
     required this.themeState,
     required this.themeStore,
   });
 
   void setLightTheme() {
     themeState.setThemeLight();
-    themeStore.saveTheme('LightData');
+    themeStore.saveTheme(storeLightTheme);
   }
 
   void setDarkTheme() {
     themeState.setThemeDark();
-    themeStore.saveTheme('DarkData');
+    themeStore.saveTheme(storeDarkTheme);
   }
 }

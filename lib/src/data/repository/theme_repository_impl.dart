@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:nhlproj/src/domain/uscases/theme_usecase.dart';
+import 'package:nhlproj/src/domain/repository/theme_repository_interface.dart';
 import 'package:nhlproj/src/presentation/screen_states/theme_state.dart';
+import 'package:nhlproj/src/utils/const/themes_const.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeStoreRepositoryImpl implements ThemeStoreRepository {
+  final _sharedPref = SharedPreferences.getInstance();
   @override
   ThemeCustomState state;
   ThemeStoreRepositoryImpl({
@@ -12,19 +15,32 @@ class ThemeStoreRepositoryImpl implements ThemeStoreRepository {
   }
 
   Future<void> _initStore() async {
-    await Future.delayed(const Duration(seconds: 1));
-    state.setThemeDark();
+    final SharedPreferences store = await _sharedPref;
+    final res = store.getString('storePreferencesNmae');
+    if (res == null) {
+      state.setThemeLight();
+    } else {
+      switch (res) {
+        case storeLightTheme:
+          state.setThemeLight();
+          break;
+        case storeDarkTheme:
+          state.setThemeDark();
+          break;
+        default:
+          state.setThemeLight();
+      }
+    }
   }
 
   @override
   Future<ThemeData> getTheme() async {
-    await Future.delayed(const Duration(seconds: 1));
-    return ThemeData.light();
+    return state.getTheme;
   }
 
   @override
   Future<void> saveTheme(String nameThemeData) async {
-    await Future.delayed(const Duration(seconds: 1));
-    print('SAVE! THEME');
+    final SharedPreferences store = await _sharedPref;
+    store.setString('storePreferencesNmae', nameThemeData);
   }
 }
